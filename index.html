@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>FREE Landing Page</title>
+        <title>Invitación de Cumpleaños</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="img/favicon.ico"/>
@@ -18,183 +18,54 @@
         <!-- Header Start -->
         <section class="header">
             <div class="header-title">
-                <h1>FREE Landing Page</h1>
+                <h1>Generador de Invitaciones de Cumpleaños</h1>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                        <form>
+                        <form action="./php/newInvitation.php" method="post" class="ajaxForm" autocomplete="off" enctype="multipart/form-data">
                             <div class="form-row">
                                 <div class="control-group col-md-6">
-                                    <label>First Name*</label>
-                                    <input class="form-control form-control-sm" type="text" required="required">
+                                    <label>Edad que cumple*</label>
+                                    <input class="form-control form-control-sm" type="text" name="age_user" required="required" placeholder="20">
                                 </div>
-                                <div class="control-group col-md-6">
-                                    <label>Last Name*</label>
-                                    <input class="form-control form-control-sm" type="text" required="required">
+                                 <div class="control-group col-md-6">
+                                    <label>Nombre*</label>
+                                    <input class="form-control form-control-sm" type="text" name="name_user" required="required" placeholder="Melisa">
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="control-group col-md-3">
-                                    <label>Contact Preference*</label>
-                                    <select class="form-control form-control-sm" required="required">
-                                        <option value="Phone">Phone</option>
-                                        <option value="Email">Email</option>
-                                    </select>
-                                </div>
-                                <div class="control-group col-md-3">
-                                    <label>Phone*</label>
-                                    <input class="form-control form-control-sm" type="text" required="required">
+                                <div class="control-group col-md-6">
+                                    <label>Fecha del evento*</label>
+                                    <input class="form-control form-control-sm" type="datetime-local" name="date_user" required="required">
                                 </div>
                                 <div class="control-group col-md-6">
-                                    <label>E-mail Address*</label>
-                                    <input class="form-control form-control-sm" type="email" required="required">
+                                    <label>Nombre del Local*</label>
+                                    <input class="form-control form-control-sm" type="text" name="localName_user" placeholder="Casa de los Campos-Trujillo"  required="required">
                                 </div>
                             </div>
                             <div class="form-row">          
-                                <div class="control-group col-md-6">
-                                    <label>Country/Region*</label>
-                                    <select class="form-control form-control-sm bfh-countries" data-country="US" required="required">                                      
-                                    </select>
-                                </div>
-                                <div class="control-group col-md-6">
-                                    <label>ZIP/Postal Code*</label>
-                                    <input class="form-control form-control-sm" type="text" required="required">
+                                <div class="control-group col-md-12">
+                                    <label>Dirección*</label>
+                                    <input class="form-control form-control-sm" type="text" name="address_user" placeholder="Calle Temprano, 45, Segovia" required="required">
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="control-group col-md-12">
-                                    <label>Subject*</label>
-                                    <select class="form-control form-control-sm" required="required">
-                                        <option value="Subject 1">Subject 1</option>
-                                        <option value="Subject 2">Subject 2</option>
-                                        <option value="Subject 3">Subject 3</option>
-                                        <option value="Subject 4">Subject 4</option>
-                                        <option value="Subject 5">Subject 5</option>
-                                    </select>
+                                <div class="col-md-12 text-center formRest">
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="control-group col-md-12">
-                                    <label>Your message*</label>
-                                    <textarea class="form-control form-control-sm" placeholder="Write your message here"></textarea>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn">Submit</button>
-                            <label class="submit-condition">By clicking Submit, you are agree to our Terms & Conditions. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor mauris nec dolor pellentesque ullamcorper.</label>
+                            <button type="submit" class="btn">Enviar</button>
+                            <label class="submit-condition">&nbsp;&nbsp; Al hacer clic en Enviar, usted acepta nuestros Términos y Condiciones.</label>
                         </form>
                     </div>               
                 </div>
             </div>
         </section>
         <!-- Header End -->
-
-        <!-- About Us Section Start-->
-        <section class="about">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <h2 class="title">About Us</h2>
-                    </div>
-                </div>
-                
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <p class="title-sub">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor mauris nec dolor pellentesque ullamcorper. Quisque scelerisque, mi finibus porta auctor, lorem magna pellentesque diam, id molestie metus nunc non ligula.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row about-cols">
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="img/about-plan.jpg" alt="" class="img-fluid">
-                                <div class="icon"><span>A</span></div>
-                            </div>
-                            <h2 class="title"><a href="#">About Us</a></h2>
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            </p>
-                            <div class="read-more">
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 wow fadeInUp">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="img/about-mission.jpg" alt="" class="img-fluid">
-                                <div class="icon"><span>M</span></div>
-                            </div>
-                            <h2 class="title"><a href="#">Our Mission</a></h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                            <div class="read-more">
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="img/about-vision.jpg" alt="" class="img-fluid">
-                                <div class="icon"><span>V</span></div>
-                            </div>
-                            <h2 class="title"><a href="#">Our Vision</a></h2>
-                            <p>
-                                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                            </p>
-                            <div class="read-more">
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Us Section end -->
-
-        <!-- Solar Partner start -->
-        <section class="newsletter">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <h2 class="title">Subscribe for our newsletter</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <p class="title-sub">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor mauris nec dolor pellentesque ullamcorper. Quisque scelerisque, mi finibus porta auctor, lorem magna pellentesque diam, id molestie metus nunc non ligula.
-                        </p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <form>
-                            <div class="form-row">
-                                <div class="control-group col-md-8 col-sm-12">
-                                    <input class="form-control form-control-lg" type="email" required="required" placeholder="Your email address*">
-                                </div>
-                                <div class="col-md-4 col-sm-12">
-                                    <button type="submit" class="btn btn-block btn-lg">Submit</button>
-                                </div>
-                                <div id="successEmail"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Solar Partner End -->
-
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>    
         <script type="text/javascript" src="js/bootstrap-formhelpers.min.js"></script>
+
+        <!-- Custom Scripts -->
     </body>
 </html>
