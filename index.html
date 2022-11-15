@@ -25,11 +25,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                         <form action="./php/newInvitation.php" method="post" class="ajaxForm" autocomplete="off" enctype="multipart/form-data">
                             <div class="form-row">
-                                <div class="control-group col-md-6">
-                                    <label>Edad que cumple*</label>
-                                    <input class="form-control form-control-sm" type="text" name="age_user" required="required" placeholder="20">
-                                </div>
-                                 <div class="control-group col-md-6">
+                                 <div class="control-group col-md-12">
                                     <label>Nombre*</label>
                                     <input class="form-control form-control-sm" type="text" name="name_user" required="required" placeholder="Melisa">
                                 </div>
@@ -37,9 +33,15 @@
                             <div class="form-row">
                                 <div class="control-group col-md-6">
                                     <label>Fecha del evento*</label>
-                                    <input class="form-control form-control-sm" type="datetime-local" name="date_user" required="required">
+                                    <input class="form-control form-control-sm" type="date" name="date_user" required="required">
                                 </div>
                                 <div class="control-group col-md-6">
+                                    <label>Hora del evento*</label>
+                                    <input class="form-control form-control-sm" type="time" name="time_user" placeholder="Casa de los Campos-Trujillo"  required="required">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="control-group col-md-12">
                                     <label>Nombre del Local*</label>
                                     <input class="form-control form-control-sm" type="text" name="localName_user" placeholder="Casa de los Campos-Trujillo"  required="required">
                                 </div>
@@ -48,10 +50,6 @@
                                 <div class="control-group col-md-12">
                                     <label>Dirección*</label>
                                     <input class="form-control form-control-sm" type="text" name="address_user" placeholder="Calle Temprano, 45, Segovia" required="required">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-md-12 text-center formRest">
                                 </div>
                             </div>
                             <button type="submit" class="btn">Enviar</button>
