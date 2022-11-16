@@ -1,6 +1,6 @@
 const formAjax = document.querySelector(".ajaxForm");
 
-function sendFormAjax(e){
+function sendForm(e){
     e.preventDefault();
     let name = document.getElementById("name_user").value;
     let date = document.getElementById("date_user").value;
@@ -10,8 +10,7 @@ function sendFormAjax(e){
     let content = document.querySelector(".message");
     
     if(name !== "" && date !== "" && time !== "" && localName !== "" && address !== ""){
-        window.location.href='../views/messageResponse.html';
-        
+        window.location.href='./views/messageResponse.html';   
     } else {
         content.innerHTML =
           "<div class='alert alert-danger' role='alert'>" +
@@ -19,7 +18,10 @@ function sendFormAjax(e){
           "Debe rellenar todos los campos " +
           "</div>";
     }
-
 }
 
-formAjax.addEventListener("submit", sendFormAjax);
+
+
+
+
+formAjax.addEventListener("submit", sendForm);
