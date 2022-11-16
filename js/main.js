@@ -9,7 +9,11 @@ function sendFormAjax(e){
     let address = document.getElementById("address_user").value;
     let content = document.querySelector(".message");
     
-   
+    if(name !== "" && date !== "" && time !== "" && localName !== "" && address !== ""){
+        
+    } else {
+        
+    }
     
 }
 
