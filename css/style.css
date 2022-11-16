@@ -111,6 +111,16 @@ section {
     color: #FFFFFF;
 }
 
+/* MESSAGE SUCCES */
+.bg-message {
+    background: url(../img/header-bg.png) left top repeat;
+    background-size: cover;
+    margin-top: 10%;
+    padding: 25px 30px;
+    font-weight: 400;
+    height: auto;
+}
+
 
 
 
