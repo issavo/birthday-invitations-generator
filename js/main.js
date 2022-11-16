@@ -10,9 +10,13 @@ function sendFormAjax(e){
     let content = document.querySelector(".message");
     
     if(name !== "" && date !== "" && time !== "" && localName !== "" && address !== ""){
-        
+
     } else {
-        
+        content.innerHTML =
+          "<div class='alert alert-danger' role='alert'>" +
+          "<strong>Ooops! Ha habido un error<br/></strong>" +
+          "Debe rellenar todos los campos " +
+          "</div>";
     }
     
 }
