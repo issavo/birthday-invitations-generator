@@ -130,7 +130,55 @@ section {
     height: 100%;
 }
 
+/* INVITATION */
 
+.bg-body-invitation {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.bg-body-invitation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url(../img/bg-header.png) left top repeat;
+    background-size: cover;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    z-index: -1;
+}
+
+.bg-invitation {
+    background: url(../img/bg-header.png) left top repeat;
+    background-size: cover;
+    margin-top: 10%;
+    padding: 25px 30px;
+    font-weight: 400;
+    height: auto;
+}
+
+.bg-body-invitation h2 {
+    color: #7c5e38;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.bg-body-invitation h3 {
+    padding: 10px;
+}
+
+
+.bg-body-invitation .content-invitation {
+    margin-top: 15%;
+    padding: 60px 50px;
+    background: rgba(124, 94, 56, 0.2);
+    font-weight: 400;
+}
 
 
 
