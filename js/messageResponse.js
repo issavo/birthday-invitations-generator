@@ -11,7 +11,7 @@ const urlParams = new URLSearchParams(params);
 const values = urlParams.values();
 for (let value of values) {
   let valuesParam = JSON.parse(value);
-  url.innerHTML =`<div class='container pt-3 pb-5'><h5 class='pt-3 pb-2'>El enlace de tu invitación es:</h5><a class='pt-2 pb-5' href='./invitation.php'>http://localhost:8080/birthday-invitations-generator/views/invitation.php?name=${valuesParam.name_user}&fecha=${valuesParam.date_user}&time=${valuesParam.time_user}&local=${valuesParam.localName_user}&address=${valuesParam.address_user}</a></div>`;
+  url.innerHTML =`<div class='container pt-3 pb-5'><h5 class='pt-3 pb-2'>El enlace de tu invitación es:</h5><a class='pt-2 pb-5' href='./invitation.php?name=${valuesParam.name_user}&fecha=${valuesParam.date_user}&time=${valuesParam.time_user}&local=${valuesParam.localName_user}&address=${valuesParam.address_user}'>http://localhost:8080/birthday-invitations-generator/views/invitation.php?name=${valuesParam.name_user}&fecha=${valuesParam.date_user}&time=${valuesParam.time_user}&local=${valuesParam.localName_user}&address=${valuesParam.address_user}</a></div>`;
 }
 
 
