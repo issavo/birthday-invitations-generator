@@ -7,11 +7,18 @@
     $local = cleanString($_POST['localName_user']);
     $address = cleanString($_POST['address_user']);
     $response = [];
-    $errors = [];
-    
+    $mensaje = "";
+
 //Data verification
-    if($name == "" || $date == "" || $time == "" || $local == "" || $address == ""){ $errors += "Debe rellenar los campos del formulario"; 
-   } else {
+    if($name == "" || $date == "" || $time == "" || $local == "" || $address == ""){
+        $mensaje +='
+            <div class="alert alert-danger" role="alert">
+                <strong> Ha habido un error<br/></strong>
+                Debe rellenar todos los campos    
+            </div>
+        '; 
+        echo json_encode($mensaje);   
+    } else {
         $response = [
         "name_user" => $name,
         "date_user" => $date,
@@ -22,19 +29,8 @@
         echo json_encode($response);
     }
 
-    if(isset($errors)){
-    ?>
-        <div class="alert alert-danger" role="alert">
-            <strong>Ops!Ha habido un error<br/></strong>
-            <?php 
-                foreach($errors as $error){
-                    echo $error;
-                }
-            ?>   
-        </div>
-        
-    <?php 
-    }
+   
+    
 
 // Clean strings to prevent sql injection
 function cleanString($textString)
