@@ -25,8 +25,8 @@
         <div class="container bg-invitation">
             <div class="row">
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto text-center">
-                    <div class="content-invitation">
-                        <h2>Celébralo con nosotros</h2>
+                    <div class="container content-invitation">
+                        <h2>Celébralo con nosotros </h2>
                         <div class="showData"></div>
                     </div>
                 </div>
