@@ -27,7 +27,7 @@
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto text-center">
                     <div class="content-invitation">
                         <h2>Celébralo con nosotros</h2>
-                        
+                        <div class="showData"></div>
                     </div>
                 </div>
             </div>
@@ -37,6 +37,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap-formhelpers.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="../js/showDataInvitation.js"></script>
 </body>
 
 </html>
