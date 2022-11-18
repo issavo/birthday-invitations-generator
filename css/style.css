@@ -156,7 +156,7 @@ section {
 .bg-invitation {
     background: url(../img/bg-header.png) left top repeat;
     background-size: cover;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 25px 30px;
     font-weight: 400;
     height: auto;
@@ -174,10 +174,14 @@ section {
 
 
 .bg-body-invitation .content-invitation {
-    margin-top: 15%;
+    
     padding: 60px 50px;
     background: rgba(124, 94, 56, 0.2);
     font-weight: 400;
+}
+
+span {
+    color: #ffffff;
 }
 
 
